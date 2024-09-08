@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+}
+p {
+    font: 50px "Roboto";
+}
+button > svg {
+    pointer-events: none;
+}
+.slider-viewport {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    top: 50%;
+    margin: 0px auto;
+    outline: 2px solid;
+    transform: translateY(-50%);
+}
+.slider {
+    position: absolute;
+    display: flex;
+    height: 100%;
+}
+.slide {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* */
+    width: 400px;
+    height: 200px;
+    background-color: rgb(150, 150, 150);
+    font: 50px "Roboto";
+}
+.slider-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(90, 90, 90, 0.7);
+    border: none;
+    cursor: pointer;
+}
+#next {
+    right: 0;
+}
+.smooth-shift {
+    transition: 0.6s cubic-bezier(0, 0, 0, 0.75);
+}
